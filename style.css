@@ -10,7 +10,7 @@ body{
 
 }
 
-/* header styles */
+/* ----header styles */
 
 .nav-bar{
   display: grid;
@@ -42,11 +42,16 @@ body{
     font-size: 16px;
     color: #242f51;
     padding: 10px 10px;
+    transition: .4s;
+    color: #ffff;
+    
 }
 .menu-section .menu a:hover{
     background-color: #fff;
-    color: #000;
+    color: #2500F9;
     border-radius: 10px;
+    
+    
 }
 
 .link-btn{
@@ -63,15 +68,12 @@ body{
     display: inline-block;
     border-radius: 20px;
     transition: .5s;
+    border:2px solid #2500F9;
 }
 .top-btn:hover{
-    border:1px solid #2500F9;
+    
     background-color: #fff;
     color: #2500F9;
-}
-.link-btn a:hover{
-    border-radius: 20px;
-    border: 1px solid #2500F9;
 }
 
 /* modern app section */
@@ -195,11 +197,7 @@ body{
    
     header{
         background:lightseagreen;
-        padding: 20px 0;
-        margin-bottom: 20px;
-        
-       
-       
+        padding: 20px 0;   
     }
     .nav-bar{
         display: flex;
@@ -253,7 +251,6 @@ body{
     display: flex;
     flex-direction: column-reverse;
     height: 100%;
-    background-color: lightgreen;
     justify-content: center;
     align-items: center;
  
