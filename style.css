@@ -43,7 +43,7 @@ body{
     color: #242f51;
     padding: 10px 10px;
     transition: .4s;
-    color: #ffff;
+   
     
 }
 .menu-section .menu a:hover{
@@ -229,6 +229,10 @@ body{
 .menu-section a{
   text-align: center;
   color: #fff;
+}
+.menu-section .menu a{
+    color: #ffff;
+    
 }
 
 .link-btn{
