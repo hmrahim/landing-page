@@ -92,6 +92,7 @@ body{
     padding: 10px;
     flex: 1;
     
+    
 }
 .modern-app-info h1{
     font-size: 60px;
@@ -105,6 +106,7 @@ body{
 .ino-btn{
     display: flex;
     align-items: center;
+    margin: 30px 0;
 
 }
 
@@ -152,7 +154,6 @@ body{
  /* app feture sections */
  .app-feture{
      display: flex;
-    
      justify-content: center;
      align-items: center;
  }
@@ -165,7 +166,6 @@ body{
  }
  .feture-image img{
      max-width: 100%;
-    
  }
 
  .feture-info{
@@ -194,7 +194,7 @@ body{
      display: flex;
      justify-content: center;
      align-items: center;
-     max-width: 70%;
+     max-width: 100%;
      padding: 20px 20px;
      gap: 20px;
  }
@@ -218,6 +218,63 @@ body{
      font-size: 16px;
      color: #616368;
  }
+
+ /* service sections start. */
+ .services{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     gap: 60px;
+ }
+ .service-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+ }
+ .service-tag h2{
+     font-size: 40px;
+     color: #242f51;
+     text-align: left;
+
+ }
+ .service-tag p{
+     font-size: 16px;
+     color: #616368;
+ }
+ .service-container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 80px;
+    
+ }
+ .service{
+     padding: 10px;
+     width: 100%;
+     margin-bottom: 20px;
+ }
+ .service h3{
+     font-size: 20px;
+     
+ }
+ .service p{
+     font-size: 16px;
+     padding-right: 20px;
+ }
+ #service-1{
+     color: #f55767;
+ }
+ #service-2{
+     color: #2563ff;
+ }
+ #service-3{
+     color: #40975f;
+ }
+
 
 @media (max-width:992px) {
     .container{
@@ -271,7 +328,6 @@ body{
     
     }
     .brands{
-     height: 20vh;
      margin: 80px 0;
     }
    
@@ -300,7 +356,115 @@ body{
         max-height: auto;
         pointer-events: cu;
     }
+
+    /* feture sectons */
+    .app-feture{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     padding: 0 10px;
+        
+    }
+   
+     .feture-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .feture-image img{
+        max-width: 100%;
+    }
+   
+    .feture-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+        
+    }
     
+ .feture-tag h2{
+    font-size: 30px;
+    color: #242f51;
+    margin: 10px 10px;
+    margin-top: 0;
+    text-align: left;
+    padding:0;
+}
+.feture-tag p{
+    font-size: 14px;
+    color: #616368;
+    margin: 10px 0px;
+    margin-top: 0;
+
+}
+.feture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px 0px;
+    gap: 5px;
+}
+.feture h3,p{
+    margin: 0;
+    padding: 0;
+}
+.feture h3{
+    font-size: 18px;
+}
+.feture p{
+    font-size: 14px;
+    color: #616368;
+}
+/* service sections rsponsive style  */
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+}
+.service-tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+ }
+ .service-tag h2{
+    font-size: 30px;
+    color: #242f51;
+    text-align: left;
+    text-align: center;
+    margin-bottom: 0;
+
+}
+.service-tag p{
+    font-size: 14px;
+    color: #616368;
+    text-align: center;
+}
+.service-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+}
+.service h3{
+    font-size: 18px;
+    
+}
+.service p{
+    font-size: 14px;
+   
+}
+
   
 
     
@@ -389,7 +553,6 @@ body{
 }
 
 .brands{
-    height: 20vh;
     margin: 80px 0;
    }
   
@@ -417,7 +580,56 @@ body{
    .brands img{
        max-width: 100%;
        max-height: auto;
-       pointer-events: cu;
    }
+
+   /* app feture sections */
+   .app-feture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 10px;
+       
+   }
+
+   .feture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 10px 0px;
+    gap: 10px;
+}
+
+/* service section responsive styles  */
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 60px;
+}
+.service-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    width: 100%;
+    margin-bottom: 0px;
+}
+.service p{
+    text-align: center;
+}
+
    
 }
