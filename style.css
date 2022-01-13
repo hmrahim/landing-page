@@ -560,6 +560,124 @@ main{
 
     }
 
+    /* client section styles */
+    .clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .client-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .client-image img{
+       width: auto;
+    }
+    .client-info h2{
+        font-size: 36px;
+        color: #242f51;
+    }
+    .client-info p{
+        font-size: 16px;
+        color: #616368;
+    }
+    .rating p{
+        color: #ffcc00;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .client-info h4{
+        font-size: 20px;
+        color: #242f51;
+    }
+    .author{
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        gap: 20px;
+    }
+    .author h4{
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        color: #242f51;
+    }
+    .author p{
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        color: #616368;
+    }
+    .author img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .questions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+    }
+
+    .questions h2{
+        font-size: 36px;
+        color: #242f51;
+        padding: 10px 30px;
+        text-align: center;
+    }
+    .questions p{
+        font-size: 16px;
+        color: #616368;
+        padding: 10px 200px;
+        text-align: center;
+    }
+
+    .instraction{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: #F5F7FA;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    .instraction h4{
+        font-size: 20px;
+        color: #242f51;
+        padding: 10px 30px;
+    }
+    .instraction p{
+        font-size: 16px;
+        color: #616368;
+        padding: 0px 30px;
+        text-align: left;
+        
+    }
+
+    .ques-wiz{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        background-color: #F5F7FA;
+        border-radius: 5px;
+    }
+    .ques-wiz h4{
+        margin: 10px 0;
+        padding: 2px 20px;
+        color: #242f51;
+    }
+    .ques-wiz .fa-plus{
+        cursor: pointer;
+    }
+
 @media (max-width:992px) {
     .container{
         width: 100%;
@@ -811,6 +929,31 @@ main{
     font-size: 16px;
     color: #616368;
 }
+
+
+
+.clients{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.client-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.client-image img{
+   width: 100%;
+}
+
+
+
 
 
   
@@ -1112,6 +1255,47 @@ main{
     grid-template-columns: repeat(1,1fr);
     grid-gap: 40px;
     margin: 50px 0;
+}
+
+
+
+.clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  
+}
+
+.client-info h2{
+    font-size: 30px;
+    color: #242f51;
+    text-align: center;
+}
+.client-info p{
+    font-size: 16px;
+    color: #616368;
+    text-align: center;
+}
+
+.rating p{
+    color: #ffcc00;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.client-info h4{
+    font-size: 20px;
+    color: #242f51;
+    text-align: center;
+}
+.author{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
 }
 
    
