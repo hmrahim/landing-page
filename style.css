@@ -3,14 +3,30 @@ body{
     margin: 0;
     background-color:#fff;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 .container{
     width: 1170px;
     margin: 0 auto;
 
 }
+html{
+    -webkit-scroll-behavior:smooth;
+    -moz-scroll-behavior:smooth;
+    scroll-behavior:smooth;
+}
 
 /* ----header styles */
+header{
+   width: 100%;
+    position:fixed;
+    background-color: #fff;
+    box-shadow: -12px -10px 15px black;
+}
+main{
+    padding-top: 100px;
+}
+
 
 .nav-bar{
   display: grid;
@@ -253,17 +269,23 @@ body{
     
  }
  .service{
-     padding: 10px;
-     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    
      margin-bottom: 20px;
+
  }
  .service h3{
      font-size: 20px;
+     text-align: center;
      
  }
  .service p{
      font-size: 16px;
      padding-right: 20px;
+     text-align: center;
  }
  #service-1{
      color: #f55767;
@@ -334,7 +356,7 @@ body{
  .app-services{
      display: grid;
      grid-template-columns: repeat(3,1fr);
-     grid-gap: 80px;
+     grid-gap: 50px;
      margin-top: 50px;
  }
  .app-service{
@@ -354,17 +376,211 @@ body{
      color: #616368;
  }
 
+ /* ultimate feture styles  */
+    .ultimate-fetures{
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 10px;
+    }
+    .ultimate-feture-tag{
+        padding: 0 30px;
+    }
+    .ultimate-feture-tag h2{
+        font-size: 36px;
+        color: #242f51;
+        margin-bottom: 10px;
+    }
+    .ultimate-feture-tag p{
+        font-size: 16px;
+        color: #616368;
+    }
+    .ultimate-feture-info{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        width: 100%;
+        margin-top: 30px;
+        
+    }
+    .ultimate-feture{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .ultimate-feture h3{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #242f51;
+    }
+    .ultimate-feture p{
+        font-size: 16px;
+        color: #616368;
+    }
+    .ultimate-feture-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .ultimate-feture-image img{
+        width: 100%;
+    }
 
+    /* prising section styles */
+    .packege-plan{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .packege-plan>h2{
+        
+        text-align: center;
+        padding: 0 200px;
+        font-size: 36px;
+        color: #242f51;
+    }
+    .packege-plan>p{
+        text-align: center;
+        padding: 0 200px;
+        font-size: 16px;
+        color: #616368;
+    }
+    .plan-switch{
+        margin-top:100px;;
+        border: 1px solid #616368;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px;
+
+    }
+    .monthly-btn{
+        text-decoration: none;
+        background: #2500F9;
+        color: #fff;
+       margin-right: 20px;
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 30px;
+        transition: .5s;
+        border:2px solid #2500F9;
+    }
+    .annually-btn{
+        text-decoration: none;
+        
+        color: #616368;
+        padding: 10px 0;
+        padding-right: 5px;
+        display: inline-block;
+        border-radius: 20px;
+        transition: .5s;
+       
+    }
+    .plan-card{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 40px;
+        margin: 50px 0;
+    }
+    .card{
+        border: 1px solid #616368;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 2px 1px 7px #616368;
+        
+       
+        
+    }
+  
+    .price {
+        background-color:#F6F8FA ;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       padding-bottom: 10px;
+       border-radius: 5px;
+       
+    }
+    .price h2,h3{
+       display: inline-block;
+       padding: 0;
+       margin: 0;
+    }
+    .price h2{
+        font-size: 60px;
+        color: #242f51;
+    }
+    .price h3{
+        font-size: 20px;
+        color: #242f51;
+    }
+    .price p{
+        color: #616368;
+        font-size: 16px;
+    }
+  
+    .price span{
+        font-size: 16px;
+        color: #616368;
+    }
+    .card ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .card ul li{
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        color: #616368;
+        line-height: 3;
+
+    }
 
 @media (max-width:992px) {
     .container{
         width: 100%;
         margin: 0 auto;
     }
+    header{
+        width: 100%;
+         position:fixed;
+         background-color: #fff;
+         box-shadow: -12px -10px 15px black;
+     }
     .nav-bar{
         display: flex;
         flex-direction: column;
+        
+        margin-bottom: 10px;
       
+      }
+      .logo-section h1{
+          margin: 0;
+          margin-top: 10px;
       }
       /* .link-btn a:hover{
         border-radius: 20px;
@@ -582,6 +798,20 @@ body{
     margin-top: 50px;
 }
 
+.packege-plan>h2{
+        
+    text-align: center;
+    padding: 0 40px;
+    font-size: 36px;
+    color: #242f51;
+}
+.packege-plan>p{
+    text-align: center;
+    padding: 0 40px;
+    font-size: 16px;
+    color: #616368;
+}
+
 
   
 
@@ -597,9 +827,12 @@ body{
         
     }
    
+   
     header{
         background:lightseagreen;
-        padding: 20px 0;   
+        padding: 20px 0;  
+        width: 100%;
+        position:sticky;
     }
     .nav-bar{
         display: flex;
@@ -797,8 +1030,88 @@ body{
 .app-services{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-gap: 80px;
+    grid-gap: 40px;
     margin-top: 50px;
+}
+
+
+/* ultimate feture sectin styles  */
+.ultimate-fetures{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+   
+}
+.ultimate-feture-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.ultimate-feture-tag{
+    padding: 0 10px;
+}
+.ultimate-feture-tag h2{
+    font-size: 30px;
+    color: #242f51;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.ultimate-feture-tag p{
+    font-size: 14px;
+    color: #616368;
+    text-align: center;
+}
+.ultimate-feture-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+.ultimate-feture{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center ;
+}
+.ultimate-feture h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #242f51;
+}
+.ultimate-feture p{
+    text-align: center;
+    font-size: 16px;
+    color: #616368;
+}
+
+/* prising section stles  */
+
+.packege-plan>h2{
+        
+    text-align: center;
+    padding: 0;
+    font-size: 36px;
+    color: #242f51;
+}
+.packege-plan>p{
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+    color: #616368;
+}
+.plan-card{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 40px;
+    margin: 50px 0;
 }
 
    
