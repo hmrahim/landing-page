@@ -275,6 +275,86 @@ body{
      color: #40975f;
  }
 
+ .integretion{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 80px;
+     margin: 50px 0;
+
+ }
+ .integretion-image{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+ }
+ .integretion-info h2{
+     font-size: 36px;
+     color: #242f51;
+     text-align: left;
+     padding: 0 20px;
+     margin-bottom: 10px;
+ }
+ .integretion-info p{
+     font-size: 16px;
+     color: #616368;
+     padding: 0 20px;
+     margin-bottom: 10px;
+ }
+ .integretion-info span{
+     padding: 0 20px;
+ }
+
+ /* app services section styles  */
+
+ .app-service-section{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 50px 0;
+     padding: 10px;
+ }
+ .app-service-tag{
+    padding: 0 100px;
+   
+ }
+ .app-service-tag h2{
+     text-align: center;
+     font-size: 36px;
+     color: #242f51;
+ }
+ .app-service-tag p{
+     text-align: center;
+     font-size: 16px;
+     color: #616368;
+ }
+
+ .app-services{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 80px;
+     margin-top: 50px;
+ }
+ .app-service{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+ .app-service h3{
+     text-align: center;
+     font-size: 20px;
+     color: #242f51;
+ }
+ .app-service p{
+     text-align: center;
+     font-size: 16px;
+     color: #616368;
+ }
+
+
 
 @media (max-width:992px) {
     .container{
@@ -465,6 +545,44 @@ body{
    
 }
 
+/* integretion section responsive styles  */
+.integretion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0 10px;
+}
+
+.integretion-image img{
+   width: 100%;
+  
+}
+ 
+.integretion-info h2{
+    font-size: 30px;
+    color: #242f51;
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.integretion-info p{
+    font-size: 14px;
+    color: #616368;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+/* app services responsive styles  */
+.app-services{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 80px;
+    margin-top: 50px;
+}
+
+
   
 
     
@@ -629,6 +747,58 @@ body{
 }
 .service p{
     text-align: center;
+}
+
+/* integretion section responsive styles  */
+.integretion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0 10px;
+}
+
+.integretion-image img{
+   max-width: 90%;
+  
+}
+.integretion-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.integretion-info h2{
+   text-align: center;
+   font-size: 30px;
+
+}
+
+.integretion-info p{
+ text-align: center;
+ font-size: 14px;
+}
+
+
+.app-service-tag h2{
+     text-align: center;
+     font-size: 30px;
+     color: #242f51;
+ }
+ .app-service-tag p{
+     text-align: center;
+     font-size: 14px;
+     color: #616368;
+ }
+
+
+.app-services{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 80px;
+    margin-top: 50px;
 }
 
    
